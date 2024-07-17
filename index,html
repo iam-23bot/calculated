@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSI and RSI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>LSI and RSI Calculator</h1>
+    <form id="calculator-form">
+        <label for="pH">pH:</label>
+        <input type="number" id="pH" required><br><br>
+        <label for="total-alkalinity">Total Alkalinity (mg/L):</label>
+        <input type="number" id="total-alkalinity" required><br><br>
+        <label for="calcium-hardness">Calcium Hardness (mg/L):</label>
+        <input type="number" id="calcium-hardness" required><br><br>
+        <label for="total-dissolved-solids">Total Dissolved Solids (mg/L):</label>
+        <input type="number" id="total-dissolved-solids" required><br><br>
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" id="temperature" required><br><br>
+        <button type="submit">Calculate LSI and RSI</button>
+    </form>
+    <div id="result">
+        <h2>Results:</h2>
+        <p id="lsi-result">LSI: <span id="lsi-value"></span></p>
+        <p id="rsi-result">RSI: <span id="rsi-value"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
